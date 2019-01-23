@@ -23,7 +23,7 @@ export default class LiveSearch extends Component {
         return (
             <section>
                 <SearchBar searching={e => this.handleSearchValueChange(e)}/>
-                <CharacterCount />
+                <CharacterCount characterLength={filteredChars.length}/>
                 <CharacterResults characters={filteredChars}/>
             </section>
         )
